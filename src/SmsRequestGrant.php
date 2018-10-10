@@ -68,7 +68,7 @@ class SmsRequestGrant extends AbstractGrant
      */
     public function getIdentifier()
     {
-        return 'sms_request';
+        return 'sms';
     }
 
     /**
