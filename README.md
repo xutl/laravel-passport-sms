@@ -54,7 +54,7 @@ Here is what a `User::byPassportSmsRequest()` method might look like...
  * @return \Illuminate\Database\Eloquent\Model|null
  * @throws \League\OAuth2\Server\Exception\OAuthServerException
  */
-public function byPassportCustomRequest(Request $request)
+public function byPassportSmsequest(Request $request)
 {
     try {
                 Validator::make($request->all(), [
