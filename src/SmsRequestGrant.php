@@ -104,7 +104,7 @@ class SmsRequestGrant extends AbstractGrant
         if (method_exists($model, 'byPassportSmsRequest')) {
             $user = (new $model)->byPassportSmsRequest($request);
         } else {
-            throw OAuthServerException::serverError('Unable to find byPassportCustomRequest method on user model.');
+            throw OAuthServerException::serverError('Unable to find byPassportSmsRequest method on user model.');
         }
         return ($user) ? new User($user->id) : null;
     }
